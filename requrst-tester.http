@@ -1,0 +1,28 @@
+## Get All 
+GET http://localhost3000/api/posts
+Accept: application/json
+
+## Get by ID 
+GET http://localhost3000/api/posts/1
+Accept: application/json
+
+## CREATE
+POST http://localhost3000/api/posts
+Content-Type: : application/json
+
+{
+    "title":"Second post ever",
+    "content":"We are on a roll now!!"
+}
+
+## Updated by ID 
+PATCH http://localhost3000/api/posts/1
+Content-Type: : application/json
+
+## Delete by ID 
+DELETE  http://localhost3000/api/posts
+Content-Type: : application/json
+
+{
+    "id":1
+}
